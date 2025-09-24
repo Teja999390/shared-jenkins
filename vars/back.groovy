@@ -1,4 +1,4 @@
 def call() {
-sh 'mkdir -p /backup'
+sh 'mkdir -p /var/backup'
 sh 'rsync -azh /var/lib/jenkins/  /backup-$(date +%F-%M-%m)'
 }
